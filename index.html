@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Links</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b10;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 45px 20px;
+}
+
+.container {
+    max-width: 440px;
+    margin: auto;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #29baff;
+    margin-bottom: 15px;
+}
+
+.profile h1 {
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.username {
+    color: #29baff;
+    font-size: 14px;
+}
+
+.bio {
+    color: #9299a5;
+    font-size: 13px;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.section-title {
+    color: #77818f;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin: 28px 0 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+/* MENU CONTAINER */
+.links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    width: 100%;
+}
+
+/* MENU CARD */
+.links > a.link {
+    display: grid !important;
+    grid-template-columns: 44px minmax(0, 1fr) 20px !important;
+    align-items: center !important;
+    gap: 14px !important;
+
+    width: 100% !important;
+    min-height: 72px !important;
+    padding: 12px 16px !important;
+    margin: 0 !important;
+
+    background: #111720 !important;
+    border: 1px solid #263442 !important;
+    border-radius: 12px !important;
+
+    color: #ffffff !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    transition: background .2s, border-color .2s;
+}
+
+.links > a.link:hover {
+    background: #172331 !important;
+    border-color: #29baff !important;
+}
+
+/* ICON */
+.links > a.link .icon {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.links > a.link .icon img {
+    width: 26px !important;
+    height: 26px !important;
+    object-fit: contain;
+}
+
+/* TEXT */
+.links > a.link .link-info {
+    min-width: 0 !important;
+    display: block !important;
+    text-align: left !important;
+}
+
+.links > a.link .link-info h3 {
+    margin: 0 0 4px !important;
+    color: #ffffff !important;
+    font-size: 14px !important;
+    line-height: 19px !important;
+}
+
+.links > a.link .link-info p {
+    margin: 0 !important;
+    color: #8999ad !important;
+    font-size: 11px !important;
+    line-height: 16px !important;
+}
+
+.icon.discord i { color: #5865F2 !important; }
+.icon.tiktok i { color: #ffffff !important; }
+.icon.instagram i { color: #E4405F !important; }
+.icon.youtube i { color: #FF0033 !important; }
+
+/* ARROW */
+.links > a.link .arrow {
+    display: block !important;
+    justify-self: end !important;
+    color: #829bb5 !important;
+    font-size: 14px !important;
+}
+
+
+
+.link:hover .arrow {
+    color: #29baff;
+    transform: translate(2px,-2px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 11px;
+    color: #626d7b;
+}
+
+
+
+.media-share {
+    display: grid !important;
+    grid-template-columns: 44px minmax(0, 1fr) 20px !important;
+    align-items: center !important;
+    gap: 14px !important;
+    width: 100% !important;
+    min-height: 72px !important;
+    padding: 12px 16px !important;
+    box-sizing: border-box !important;
+    background: #111720 !important;
+    border: 1px solid #263442 !important;
+    border-radius: 12px !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.media-share .icon {
+    width: 44px !important;
+    height: 44px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.media-share .icon img {
+    width: 26px !important;
+    height: 26px !important;
+    object-fit: contain !important;
+}
+
+.media-share .link-info h3 {
+    color: white !important;
+    margin: 0 0 4px !important;
+}
+
+.media-share .link-info p {
+    color: #8999ad !important;
+    margin: 0 !important;
+}
+
+.media-share .arrow {
+    justify-self: end !important;
+    color: #829bb5 !important;
+}
+
+
+
+@media(max-width:480px) {
+    body {
+        padding: 35px 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="profile.jpg" class="avatar" alt="Profile">
+
+        <h1>Dzul</h1>
+        <div class="username">@dzulfathan</div>
+
+        <p class="bio">
+            Welcome to my personal page.<br>
+            Find all my social media and communities here.
+        </p>
+    </div>
+
+    <div class="section-title">SOCIAL MEDIA</div>
+
+    <div class="links">
+
+        <a href="https://discord.gg/U8FA35Rrk5" class="link" target="_blank" rel="noopener">
+            <div class="icon discord">
+                <i class="fa-brands fa-discord"></i>
+            </div>
+            <div class="link-info">
+                <h3>Noverra Roleplay</h3>
+                <p>Join our community</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@dzul_fathan" class="link" target="_blank" rel="noopener">
+            <div class="icon tiktok">
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="link-info">
+                <h3>TikTok</h3>
+                <p>Follow my TikTok</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+
+        <a href="https://instagram.com/@dzul_fathan" class="link" target="_blank" rel="noopener">
+            <div class="icon instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="link-info">
+                <h3>Instagram</h3>
+                <p>Follow my Instagram</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+
+        <a href="https://youtube.com/@Dzufathan" class="link" target="_blank" rel="noopener">
+            <div class="icon youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="link-info">
+                <h3>YouTube</h3>
+                <p>Watch my videos</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+        </a>
+
+    </div>
+
+ 
+<div class="section-title">MEDIA SHARE</div>
+
+<div class="links">
+    <a href="https://bagibagi.co/Dzul111"
+       class="link media-share"
+       target="_blank"
+       rel="noopener">
+
+        <div class="icon">
+            <img src="bagibagi.png" alt="BagiBagi">
+        </div>
+
+        <div class="link-info">
+            <h3>Bagi Bagi</h3>
+            <p>Images, videos and files</p>
+        </div>
+
+        <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+    </a>
+</div>
+
+    <footer>
+        © 2026 dzul_fathan. All rights reserved.
+    </footer>
+
+</div>
+
+</body>
+</html>
